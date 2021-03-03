@@ -15,6 +15,41 @@ $gray: #6c6c6c;
 $black: #000;
 $white: #fff;
 
+.title-blue {
+   margin: 50px 0px 50px 65px;
+   font-size: 24px;
+   font-weight: 500;
+   color: $blue;
+   position: relative;
+   &::before {
+      content: "";
+      width: 46px;
+      height: 19px;
+      background: $blue;
+      position: absolute;
+      left: -65px;
+      top: 2px;
+      border-radius: 50px;
+   }
+}
+.title-green {
+   margin: 50px 0px 50px 65px;
+   font-size: 24px;
+   font-weight: 500;
+   color: $green;
+   position: relative;
+   &::before {
+      content: "";
+      width: 46px;
+      height: 19px;
+      background: $green;
+      position: absolute;
+      left: -65px;
+      top: 2px;
+      border-radius: 50px;
+   }
+}
+
 .header {
    &__row {
       position: relative;
@@ -117,5 +152,59 @@ $white: #fff;
    }
 
    &__img {
+   }
+}
+.vebinars {
+   &__row {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 23px;
+   }
+   &__wrapper {
+      position: absolute;
+      left: 30px;
+      bottom: 40px;
+      max-width: 370px;
+   }
+   &__date {
+      background: #ffffff;
+      border-radius: 10px 10px 0px 0px;
+      padding: 10px 16px;
+      color: #666;
+      font-style: italic;
+      max-width: 111px;
+      text-align: center;
+   }
+
+   &__title {
+      min-width: 370px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 25px;
+      padding: 12px 16px;
+      color: #fff;
+      border-radius: 0px 10px 10px 10px;
+      background: $green;
+   }
+
+   &__play {
+      position: absolute;
+      right: 35px;
+      bottom: 45px;
+   }
+
+   &__all {
+      text-align: center;
+      margin: 50px 0px 50px 0px;
+      & a {
+         font-size: 18px;
+         color: $green;
+         text-decoration-line: underline;
+      }
    }
 }
