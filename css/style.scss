@@ -3,3 +3,119 @@
 body {
    font-family: "Roboto", sans-serif;
 }
+.container {
+   max-width: 1240px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+$blue: #4cbcbf;
+$green: #7ec909;
+$gray: #6c6c6c;
+$black: #000;
+$white: #fff;
+
+.header {
+   &__row {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 0px 30px 0px;
+
+      &::after {
+         content: "";
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         height: 5px;
+         background: linear-gradient(90deg, #63c909 37.1%, #4cbcbf 50%);
+      }
+   }
+
+   &__logo {
+      & img {
+         object-fit: none;
+      }
+   }
+
+   &__menu {
+      & a {
+         font-weight: 400;
+         color: $black;
+         &:hover {
+            color: $blue;
+            font-weight: 700;
+         }
+      }
+      & ul {
+         display: flex;
+         align-items: center;
+      }
+      & li {
+         margin-right: 20px;
+         padding: 5px 10px;
+
+         &.active {
+            border: 4px solid #4cbcbf;
+            box-sizing: border-box;
+            border-radius: 50px;
+            & a {
+               color: $blue;
+               font-weight: 700;
+            }
+         }
+      }
+   }
+
+   &__user {
+      position: relative;
+      &::before {
+         content: "";
+         position: absolute;
+         left: -25px;
+         top: -2px;
+         width: 15px;
+         height: 16px;
+         background: url("../img/user.svg");
+      }
+      & a {
+         color: $green;
+      }
+   }
+}
+.intro {
+   & h1 {
+      font-size: 36px;
+      line-height: 42px;
+   }
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 110px 30px 110px;
+   }
+
+   &__item {
+      & p {
+         max-width: 523px;
+         line-height: 23px;
+         margin: 30px 0px 40px 0px;
+      }
+   }
+
+   &__button a {
+      padding: 14px 27px;
+      color: $white;
+      background: #7ec909;
+      border-radius: 50px;
+      transition: 0.3s;
+      &:hover {
+         background: $blue;
+      }
+   }
+
+   &__img {
+   }
+}

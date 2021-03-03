@@ -77,3 +77,130 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: "Roboto", sans-serif;
 }
+
+.container {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__row {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0px 30px 0px;
+}
+
+.header__row::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(37.1%, #63c909), color-stop(50%, #4cbcbf));
+  background: linear-gradient(90deg, #63c909 37.1%, #4cbcbf 50%);
+}
+
+.header__logo img {
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+.header__menu a {
+  font-weight: 400;
+  color: #000;
+}
+
+.header__menu a:hover {
+  color: #4cbcbf;
+  font-weight: 700;
+}
+
+.header__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__menu li {
+  margin-right: 20px;
+  padding: 5px 10px;
+}
+
+.header__menu li.active {
+  border: 4px solid #4cbcbf;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50px;
+}
+
+.header__menu li.active a {
+  color: #4cbcbf;
+  font-weight: 700;
+}
+
+.header__user {
+  position: relative;
+}
+
+.header__user::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: -2px;
+  width: 15px;
+  height: 16px;
+  background: url("../img/user.svg");
+}
+
+.header__user a {
+  color: #7ec909;
+}
+
+.intro h1 {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.intro__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 110px 30px 110px;
+}
+
+.intro__item p {
+  max-width: 523px;
+  line-height: 23px;
+  margin: 30px 0px 40px 0px;
+}
+
+.intro__button a {
+  padding: 14px 27px;
+  color: #fff;
+  background: #7ec909;
+  border-radius: 50px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.intro__button a:hover {
+  background: #4cbcbf;
+}

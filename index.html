@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Главная страница</title>
    <link rel="stylesheet" href="css/style.css">
    <script src="js/script.js"></script>
    <script src="js/jquery-3.6.0.min.js"></script>
@@ -16,23 +16,38 @@
       <div class="container">
          <div class="header__row">
             <div class="header__logo"><img src="img/logo.svg" alt="">
-               <p>Онлайн-проект для аллергологов, пульманологов и ЛОР-врачей</p>
+               <!-- <p>Онлайн-проект для аллергологов, пульманологов и ЛОР-врачей</p> -->
             </div>
             <div class="header__menu">
                <ul>
-                  <li>Главная</li>
-                  <li>Новости</li>
-                  <li>Журнал</li>
-                  <li>Библиотека</li>
-                  <li>Мероприятия</li>
-                  <li>О проекте</li>
-                  <li>Партнеры</li>
+                  <li class="active"><a href="">Главная</a></li>
+                  <li><a href="">Новости</a></li>
+                  <li><a href="">Журнал</a></li>
+                  <li><a href="">Библиотека</a></li>
+                  <li><a href="">Мероприятия</a></li>
+                  <li><a href="">О проекте</a></li>
+                  <li><a href="">Партнеры</a></li>
                </ul>
             </div>
-            <div class="header__user">Личный кабинет</div>
+            <div class="header__user"><a href="">Личный кабинет</a></div>
          </div>
       </div>
    </header>
+   <section class="intro">
+      <div class="container">
+         <div class="intro__row">
+            <div class="intro__item">
+               <h1>AlPulmo.ru — только для специалистов</h1>
+               <p>Наш проект - часть традиционных коммуникаций Агентства медицинской информации "Медфорум" для врачей и
+                  медицинских работников.
+                  Мы аккумулируем все важные новости, анонсы мероприятий и другой профессиональный контент для
+                  аллергологов, пульмонологов и ЛОР-врачей на удобной онлайн-площадке. </p>
+               <div class="intro__button"><a href="">Узнать о проекте</a></div>
+            </div>
+            <div class="intro__img"><img src="/img/into-img.jpg" alt=""></div>
+         </div>
+      </div>
+   </section>
 </body>
 
 </html>
