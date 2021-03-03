@@ -196,6 +196,11 @@ $white: #fff;
       position: absolute;
       right: 35px;
       bottom: 45px;
+      transition: 0.3s;
+      &:hover {
+         cursor: pointer;
+         transform: scale(1.2);
+      }
    }
 
    &__all {

@@ -290,6 +290,14 @@ body {
   position: absolute;
   right: 35px;
   bottom: 45px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.vebinars__play:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .vebinars__all {
