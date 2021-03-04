@@ -302,7 +302,7 @@ body {
 
 .vebinars__all {
   text-align: center;
-  margin: 50px 0px 50px 0px;
+  padding: 50px 0px;
 }
 
 .vebinars__all a {
@@ -402,10 +402,78 @@ body {
 
 .anons__all {
   text-align: center;
-  margin: 45px 0px 0px 0px;
+  padding: 50px 0px;
 }
 
 .anons__all a {
+  font-size: 18px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #4cbcbf;
+}
+
+.activity__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.activity__item {
+  position: relative;
+  padding: 32px;
+  width: 295px;
+  height: 312px;
+  border: 2px solid #4cbcbf;
+  border-radius: 23px;
+}
+
+.activity__item.active {
+  background: linear-gradient(144.84deg, #4cbcbf 3.5%, #7ec909 79.34%);
+  -webkit-box-shadow: 0px 0px 10px 3px #c4c4c4;
+          box-shadow: 0px 0px 10px 3px #c4c4c4;
+}
+
+.activity__item.active > .activity__date,
+.activity__item.active .activity__title {
+  color: #fff;
+}
+
+.activity__item.active > .activity__button {
+  background: url("../img/anons-arrow-w.svg") center no-repeat;
+}
+
+.activity__date {
+  font-style: italic;
+  font-size: 16px;
+  color: #666;
+}
+
+.activity__title {
+  font-size: 16px;
+  line-height: 155.69%;
+  color: #171717;
+  font-weight: 500;
+  margin: 12px 0px 0px 0px;
+}
+
+.activity__button {
+  position: absolute;
+  left: 37px;
+  bottom: 40px;
+  width: 27px;
+  height: 13px;
+  background: url("../img/anons-arrow.svg") center no-repeat;
+}
+
+.activity__all {
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.activity__all a {
   font-size: 18px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
