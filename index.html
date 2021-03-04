@@ -7,8 +7,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Главная страница</title>
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/animate.css">
    <script src="js/script.js"></script>
    <script src="js/jquery-3.6.0.min.js"></script>
+   <script src="js/wow.js"></script>
+   <script>
+      new WOW().init();
+   </script>
+
 </head>
 
 <body>
@@ -36,7 +42,7 @@
    <section class="intro">
       <div class="container">
          <div class="intro__row">
-            <div class="intro__item">
+            <div class="intro__item wow slideInLeft">
                <h1>AlPulmo.ru — только для специалистов</h1>
                <p>Наш проект - часть традиционных коммуникаций Агентства медицинской информации "Медфорум" для врачей и
                   медицинских работников.
@@ -44,7 +50,7 @@
                   аллергологов, пульмонологов и ЛОР-врачей на удобной онлайн-площадке. </p>
                <div class="intro__button"><a href="">Узнать о проекте</a></div>
             </div>
-            <div class="intro__img"><img src="img/into-img.jpg" alt=""></div>
+            <div class="intro__img  wow slideInRight"><img src="img/into-img.jpg" alt=""></div>
          </div>
       </div>
    </section>
@@ -52,14 +58,14 @@
       <div class="container">
          <h2 class="title-green">Вебинары</h2>
          <div class="vebinars__row">
-            <div class="vebinars__item"><img src="img/vebinar-01.jpg" alt="">
+            <div class="vebinars__item wow fadeIn" data-wow-delay="0.2s"><img src="img/vebinar-01.jpg" alt="">
                <div class="vebinars__wrapper">
                   <div class="vebinars__date">15.02.2021</div>
                   <div class="vebinars__title">Все, что вы хотели знать об АСИТ</div>
                </div>
                <div class="vebinars__play"><img src="img/play.svg" alt=""></div>
             </div>
-            <div class="vebinars__item"><img src="img/vebinar-02.jpg" alt="">
+            <div class="vebinars__item wow fadeIn" data-wow-delay="0.5s"><img src="img/vebinar-02.jpg" alt="">
                <div class="vebinars__wrapper">
                   <div class="vebinars__date">15.02.2021</div>
                   <div class="vebinars__title">Приглашаем принять участие в конгрессе
@@ -75,7 +81,7 @@
       <div class="container">
          <h2 class="title-blue">Анонс недели</h2>
          <div class="anons__row">
-            <div class="anons__item">
+            <div class="anons__item wow fadeInUp" data-wow-delay="0.2s">
                <div class="anons__cat">Название рубрики</div>
                <div class="anons__img"><img src="img/anons-01.jpg" alt=""></div>
                <div class="anons__wrapper">
@@ -87,7 +93,7 @@
                </div>
 
             </div>
-            <div class="anons__item">
+            <div class="anons__item wow fadeInUp" data-wow-delay="0.4s">
                <div class="anons__cat">Название рубрики</div>
                <div class="anons__img"><img src="img/anons-01.jpg" alt=""></div>
                <div class="anons__wrapper">
@@ -99,7 +105,7 @@
                </div>
 
             </div>
-            <div class="anons__item">
+            <div class="anons__item wow fadeInUp" data-wow-delay="0.6s">
                <div class="anons__cat">Название рубрики</div>
                <div class="anons__img"><img src="img/anons-01.jpg" alt=""></div>
                <div class="anons__wrapper">
@@ -111,7 +117,7 @@
                </div>
 
             </div>
-            <div class="anons__item">
+            <div class="anons__item wow fadeInUp" data-wow-delay="0.8s">
                <div class="anons__cat">Название рубрики</div>
                <div class="anons__img"><img src="img/anons-01.jpg" alt=""></div>
                <div class="anons__wrapper">
@@ -131,25 +137,25 @@
       <div class="container">
          <div class="title-blue">Мероприятия</div>
          <div class="activity__row">
-            <div class="activity__item">
+            <div class="activity__item wow zoomIn">
                <div class="activity__date">17.02.2021</div>
                <div class="activity__title">Межрегиональная междисциплинарная школа «Инфектология 2021»
                   Нижний Новгород </div>
                <div class="activity__button"><a href=""></a></div>
             </div>
-            <div class="activity__item">
+            <div class="activity__item wow zoomIn">
                <div class="activity__date">17.02.2021</div>
                <div class="activity__title">Межрегиональная междисциплинарная школа «Инфектология 2021»
                   Нижний Новгород </div>
                <div class="activity__button"><a href=""></a></div>
             </div>
-            <div class="activity__item active">
+            <div class="activity__item wow zoomIn active">
                <div class="activity__date">17.02.2021</div>
                <div class="activity__title">Межрегиональная междисциплинарная школа «Инфектология 2021»
                   Нижний Новгород </div>
                <div class="activity__button"> <a href=""></a></div>
             </div>
-            <div class="activity__item">
+            <div class="activity__item wow zoomIn">
                <div class="activity__date">17.02.2021</div>
                <div class="activity__title">Межрегиональная междисциплинарная школа «Инфектология 2021»
                   Нижний Новгород </div>
@@ -161,7 +167,7 @@
    </section>
    <section class="adv">
       <div class="container">
-         <div class="adv__wrapper"><img src="img/seo.jpg" alt=""></div>
+         <div class="adv__wrapper wow pulse"><img src="img/seo.jpg" alt=""></div>
       </div>
    </section>
    <footer class="footer">
