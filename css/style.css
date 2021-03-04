@@ -469,6 +469,10 @@ body {
   background: url("../img/anons-arrow.svg") center no-repeat;
 }
 
+.activity__button a {
+  padding: 20px;
+}
+
 .activity__all {
   text-align: center;
   padding: 50px 0px;

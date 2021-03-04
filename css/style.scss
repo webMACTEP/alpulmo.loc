@@ -343,6 +343,9 @@ $white: #fff;
       width: 27px;
       height: 13px;
       background: url("../img/anons-arrow.svg") center no-repeat;
+      & a {
+         padding: 20px;
+      }
    }
    &__all {
       text-align: center;
