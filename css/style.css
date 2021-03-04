@@ -484,3 +484,24 @@ body {
           text-decoration-line: underline;
   color: #4cbcbf;
 }
+
+.adv {
+  padding: 30px 0px 80px 0px;
+}
+
+.adv__wrapper {
+  width: 100%;
+  height: 312px;
+  border: 2px solid #4cbcbf;
+  border-radius: 23px;
+  overflow: hidden;
+}
+
+.adv__wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
