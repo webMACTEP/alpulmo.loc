@@ -434,6 +434,7 @@ body {
   background: linear-gradient(144.84deg, #4cbcbf 3.5%, #7ec909 79.34%);
   -webkit-box-shadow: 0px 0px 10px 3px #c4c4c4;
           box-shadow: 0px 0px 10px 3px #c4c4c4;
+  border: none;
 }
 
 .activity__item.active > .activity__date,
