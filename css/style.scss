@@ -117,6 +117,7 @@ $white: #fff;
          margin-right: 20px;
          padding: 5px 10px;
          position: relative;
+         border: 4px solid $white;
 
          &:hover > .submenu {
             display: block;
@@ -407,7 +408,7 @@ $white: #fff;
    }
 }
 .adv {
-   padding: 30px 0px 80px 0px;
+   padding: 30px 0px 0px 0px;
    &__wrapper {
       width: 100%;
       height: 312px;
@@ -423,6 +424,7 @@ $white: #fff;
    }
 }
 .footer {
+   margin: 80px 0px 0px 0px;
    &__row {
       background: $gray;
       border-radius: 23px 23px 0px 0px;
