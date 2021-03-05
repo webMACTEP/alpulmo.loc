@@ -159,7 +159,6 @@ body {
 
 .header__menu a:hover {
   color: #4cbcbf;
-  font-weight: 700;
 }
 
 .header__menu ul {
@@ -192,6 +191,10 @@ body {
   position: relative;
 }
 
+.header__user:hover::before {
+  background: url("../img/user-a.svg");
+}
+
 .header__user::before {
   content: "";
   position: absolute;
@@ -204,6 +207,12 @@ body {
 
 .header__user a {
   color: #7ec909;
+}
+
+.header__user a:hover {
+  color: #4cbcbf;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .intro h1 {

@@ -81,7 +81,6 @@ $white: #fff;
          color: $black;
          &:hover {
             color: $blue;
-            font-weight: 700;
          }
       }
       & ul {
@@ -106,6 +105,11 @@ $white: #fff;
 
    &__user {
       position: relative;
+      &:hover {
+         &::before {
+            background: url("../img/user-a.svg");
+         }
+      }
       &::before {
          content: "";
          position: absolute;
@@ -117,6 +121,10 @@ $white: #fff;
       }
       & a {
          color: $green;
+         &:hover {
+            color: $blue;
+            text-decoration-line: underline;
+         }
       }
    }
 }
