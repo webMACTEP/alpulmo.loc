@@ -189,6 +189,10 @@ body {
   font-weight: 400;
 }
 
+.header__menu ul .submenu li a:hover {
+  color: #4cbcbf;
+}
+
 .header__menu ul .submenu li a .subactive {
   color: #4cbcbf;
 }

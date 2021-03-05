@@ -102,6 +102,9 @@ $white: #fff;
                & a {
                   color: #666;
                   font-weight: 400;
+                  &:hover {
+                     color: $blue;
+                  }
                   & .subactive {
                      color: $blue;
                   }
