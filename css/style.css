@@ -155,6 +155,8 @@ body {
 .header__menu a {
   font-weight: 400;
   color: #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header__menu ul {
@@ -250,12 +252,12 @@ body {
 
 .header__user a {
   color: #7ec909;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header__user a:hover {
   color: #4cbcbf;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
 }
 
 .intro h1 {
@@ -483,19 +485,19 @@ body {
   border-radius: 23px;
 }
 
-.activity__item.active {
+.activity__item:hover {
   background: linear-gradient(144.84deg, #4cbcbf 3.5%, #7ec909 79.34%);
   -webkit-box-shadow: 0px 0px 10px 3px #c4c4c4;
           box-shadow: 0px 0px 10px 3px #c4c4c4;
   border: none;
 }
 
-.activity__item.active > .activity__date,
-.activity__item.active .activity__title {
+.activity__item:hover > .activity__date,
+.activity__item:hover .activity__title {
   color: #fff;
 }
 
-.activity__item.active > .activity__button {
+.activity__item:hover > .activity__button {
   background: url("../img/anons-arrow-w.svg") center no-repeat;
 }
 
