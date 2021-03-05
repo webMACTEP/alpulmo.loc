@@ -157,10 +157,6 @@ body {
   color: #000;
 }
 
-.header__menu a:hover {
-  color: #4cbcbf;
-}
-
 .header__menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,9 +166,48 @@ body {
           align-items: center;
 }
 
+.header__menu ul .submenu {
+  display: none;
+  z-index: 1;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 3px 4px rgba(76, 188, 191, 0.3);
+          box-shadow: 0px 3px 4px rgba(76, 188, 191, 0.3);
+  border-radius: 0px 0px 16px 16px;
+}
+
+.header__menu ul .submenu li {
+  width: 125px;
+  margin: 10px;
+}
+
+.header__menu ul .submenu li.subactive a {
+  color: #4cbcbf;
+}
+
+.header__menu ul .submenu li a {
+  color: #666;
+  font-weight: 400;
+}
+
+.header__menu ul .submenu li a .subactive {
+  color: #4cbcbf;
+}
+
 .header__menu li {
   margin-right: 20px;
   padding: 5px 10px;
+  position: relative;
+}
+
+.header__menu li:hover > .submenu {
+  display: block;
+  position: absolute;
+  left: -4px;
+  top: 28px;
+}
+
+.header__menu li:hover a {
+  color: #4cbcbf;
 }
 
 .header__menu li.active {
@@ -180,6 +215,10 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 50px;
+}
+
+.header__menu li.active:hover {
+  border-radius: 14px 14px 0px 0px;
 }
 
 .header__menu li.active a {
@@ -348,6 +387,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  background: #fff;
 }
 
 .anons__cat {
