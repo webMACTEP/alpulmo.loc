@@ -339,6 +339,14 @@ $white: #fff;
       display: flex;
       flex-wrap: wrap;
       align-content: center;
+
+      & a {
+         color: #171717;
+         transition: 0.2s;
+         &:hover {
+            color: $blue;
+         }
+      }
    }
    &__title {
       font-size: 16px;
@@ -346,9 +354,6 @@ $white: #fff;
       line-height: 155.69%;
       max-width: 322px;
       margin: 0px 0px 13px 0px;
-      & a {
-         color: #171717;
-      }
    }
 
    &__text {
@@ -392,6 +397,7 @@ $white: #fff;
       &:hover {
          background: linear-gradient(144.84deg, #4cbcbf 3.5%, #7ec909 79.34%);
          box-shadow: 0px 0px 10px 3px #c4c4c4;
+         padding: 34px;
          border: none;
          & > .activity__date,
          .activity__title {
